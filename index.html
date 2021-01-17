@@ -1,29 +1,121 @@
 <!doctype html>
-<html ⚡lang="en">
+<html ⚡ lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Merri Day's Thrift Store</title>
-  <link
-      rel="shortcut icon"
-      href="https://res.cloudinary.com/dbd23cfw2/image/upload/v1610844081/thriftstore%20/iconfinder_Flower-1_2974381_r5qu65.png"
-    />
-  <link rel="canonical" href="./regular-html-version.html">
-  <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <!-- This loads AMP JS library (should be done at the top so that it can be utitlized which is unusual) -->
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Merri Day's Thrift Store</title>
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dbd23cfw2/image/upload/v1610844081/thriftstore%20/iconfinder_Flower-1_2974381_r5qu65.png" />
+    <!-- Update with actual url after deployment it will direct to HTML in itself since no other HTML file exists-->
+    <link rel="canonical" href="./regular-html-version.html">
+    <meta name="viewport" content="width=device-width">
+    <!-- This CSS  hides the page until JS library is done downloading -->
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+    <!-- Custom CSS in head or inline body -->
+    <style amp-custom>
+        body {
+            font-family: sans-serif;
+            line-height: 1.5rem;
+            padding: 20px;
+        }
+
+        p,
+        h2 {
+            border: 1px dotted red;
+        }
+    </style>
+
 </head>
+
 <body>
-    <header class="headerbar"><h1>Merri Day's Thrift Store</h1></header>
+    <header class="headerbar">
+        <h1>Merri Day's Thrift Store</h1>
+    </header>
     <main>
-      <div class="main-content">
-        <img
-          src="https://res.cloudinary.com/dbd23cfw2/image/upload/v1610843624/thriftstore%20/Goodwill_wr2ylu.jpg"
-        />
-        <div class="below-hero">
-          <h2 class="main-heading">What we do!</h2>
-          <p class="main-text">
-            Our thrift store is based in Bellevue, Wa and we love thrifting! We'd love to help you find a gift for your best friend, replace that broke tea pot and find a little something for yourself! 
-          </p>
+        <div class="main-content">
+            <!-- amp-image must have height and width -->
+            <amp-img
+                src="https://res.cloudinary.com/dbd23cfw2/image/upload/v1610843624/thriftstore%20/Goodwill_wr2ylu.jpg"
+                alt="thriftstore welcome pic" height="500" width="800">
+            </amp-img>
+            <div class="below-hero">
+                <h2 class="main-heading">What we do!</h2>
+                <p class="main-text">
+                    Our thrift store is based in Bellevue, Wa and we love thrifting! We'd love to help you find a gift
+                    for your best friend, replace that broke tea pot and find a little something for yourself!
+                </p>
+            </div>
         </div>
-      </div>
     </main>
 </body>
+
 </html>
